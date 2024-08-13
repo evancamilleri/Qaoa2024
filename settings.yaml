@@ -1,0 +1,20 @@
+# settings.yaml
+
+execution_ref: 'XTEST'
+load_graphs: ''                       # 'ge8c.g6', 'ge10c.g6','12a.hyper'
+internal_graph_indexes: ['q12']            # if load_graphs='' | q4, q5, q6, e9, q12, q13, q15
+save_to_db: true
+console_to_file: false
+action: 'MAXIMIZE'
+layer_range: [5]
+classical_optimizer_loop: ['BFGS']
+angle_study_loop: ['multi_angle', 'default']    # 'multi_angle', 'automorphism_global', 'ka', 'polynomial', 'default', automorphism_local'
+try_all_initial_angles: false
+initial_angles_loop: ['one_p']        # 'one_p', 'tqa075', 'random0_to_2pi_p', 'random0_to_1_p', 'tqa100', 'tenth_p', 'one_p2'
+optimization_loop: ['PUBO']
+orbit_library: 'generic'                # igraph, nauty, generic
+build_circuit: true
+show_circuit: false
+build_in_qiskit: false
+run_qaoa: true
+folder: '/home/evan/Documents/ex09/%REF%_output_%Y%m%d_%H%M%S'

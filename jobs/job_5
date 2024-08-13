@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+#SBATCH --job-name=PUBO5
+#SBATCH --output=output_5.txt
+#SBATCH --ntasks=1
+#
+hostname
+python ex7_x.py
